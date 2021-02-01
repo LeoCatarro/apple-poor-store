@@ -1,21 +1,29 @@
-package com.example.poorstore;
+package com.example.poorstore.models;
 
-import org.jetbrains.annotations.NotNull;
+//import org.jetbrains.annotations.NotNull;
 
 import javax.persistence.*;
 
 @Entity
-@Table(name = "user")
-public class User {
+@Table(name = "person")
+public class Person {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column
+    private long id;
 
+    @Column(nullable=false)
     private String username;
+
+    @Column(nullable=false)
     private String password;
 
-    //Empty constructor
-    public User() {
+    //Constructor
+    public Person(String username, String password)
+    {
+        this.username = username;
+        this.password = password;
     }
 
     //Setters e getters
@@ -33,3 +41,4 @@ public class User {
         this.password = password;
     }
 }
+
