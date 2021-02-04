@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml" use-expressions="true">
     <head>
         <title>Apple Poor Store</title>
         <link rel="stylesheet" href="style.css">
@@ -25,11 +25,23 @@
                 <form sec:authorize="isAuthenticated()" th:action="@{/logout}" method="post">
                     <input class="advanced_search_button" type="submit" value="Log Out" />
                 </form>
+
+                <form sec:authorize="hasAnyRole('ADMIN')" th:action="@{/add-product}">
+                    <sec:authorize access="hasAnyRole('ADMIN')" >
+                        <input class="advanced_search_button" type="submit" value="Add" />
+                    </sec:authorize>
+                </form>
+                <!--
+                <form sec:authorize="hasAnyRole('ADMIN', 'USER)" th:action="@{/shopping-cart}">
+                    <input class="advanced_search_button" type="submit" value="Shop-Cart" />
+                </form>
+                -->
             </div>
         </header>
         <!--
             Quantidade de Produtos
         -->
+
         <p class="quantidade_produtos">5 de 5</p>
         <!--
             Lista de Produtos
@@ -37,70 +49,22 @@
         <div class="prods_categorias">      <!--Div que engloba os produtos e as categorias-->
                 <section class="products">
                     <ul class="list" style="list-style-type:none;">
-                        <li>      
+                        <div class="prods_hr">
+                        <li th:each="product: ${productList}">
                             <div class="product_img">
                                 <a href="product.html"><img src="media/macbook16.jpg"></a>
                             </div>
                             <div class="about_prod">
-                                <a href="product.html"><h1 class="brand_model">Mac Book Pro 16"</h1></a>
-                                <p class="description">Apple Mac Book Pro 16" - Intel Core i9 - RAM: 64 GB - 4 TB SSD - AMD Radeon Pro 5500M</p>
-                                <p class="price">5809€</p>
+                                <a href="product.html"><h1 class="brand_model" th:text="${product.productName}"></h1></a>
+                                <p class="description" th:text="${product.description}"></p>
+                                <p class="price" th:text="${product.price}"></p>
                             </div>
+
+                            <hr>    <!--Linha horizontal que separa os produtos-->
                         </li>
-
-                        <hr>    <!--Linha horizontal que separa os produtos-->
-
-                        <li>      
-                            <div class="product_img">
-                                <a href="product.html"><img src="media/macbookairprateado.jpg"></a>
-                            </div>
-                            <div class="about_prod">
-                                <a href="product.html"><h1 class="brand_model">Mac Book Air Prateado</h1></a>
-                                <p class="description">Apple Mac Book Air 13.3" - Intel Core i3 - RAM: 8 GB - 256 GB SSD PCIe - Intel Iris Plus Graphics</p>
-                                <p class="price">998€</p><p class="old_price">1098€</p>
-                            </div>
-                        </li>
-
-                        <hr>    <!--Linha horizontal que separa os produtos-->
-
-                        <li>      
-                            <div class="product_img">
-                                <a href="product.html"><img src="media/macbookairM1.webp"></a>
-                            </div>
-                            <div class="about_prod">
-                                <a href="product.html"><h1 class="brand_model">Mac Book Air M1</h1></a>
-                                <p class="description">Apple M1 - 13.3" - RAM: 8 GB - 256 GB SSD - Integrada</p>
-                                <p class="price">1159€</p>
-                            </div>
-                        </li> 
-
-                        <hr>    <!--Linha horizontal que separa os produtos-->
-
-                        <li> 
-                            <div class="product_img">
-                                <a href="product.html"><img src="media/macbookproM1.webp"></a>
-                            </div>
-                            <div class="about_prod">
-                                <a href="product.html"><h1 class="brand_model">Mac Book Pro M1</h1></a>
-                                <p class="description">Apple M1 - 13.3" - RAM: 8GB - 256GB SSD - Integrada</p>
-                                <p class="price">1479€</p>
-                            </div>     
-                        </li>
-
-                        <hr>    <!--Linha horizontal que separa os produtos-->
-
-                        <li> 
-                            <div class="product_img">
-                                <a href="product.html"><img src="media/macminiM1.webp"></a>
-                            </div>
-                            <div class="about_prod">
-                                <a href="product.html"><h1 class="brand_model">Mac Mini M1</h1></a>
-                                <p class="description"> Apple's new mac mini with M1 chip</p>
-                                <p class="price">819€ </p>
-                            </div>     
-                        </li>   
-                    </ul>    
-                </section>    
+                        </div>
+                    </ul>
+                </section>
             <!--
                 Categorias
             -->

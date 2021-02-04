@@ -1,9 +1,17 @@
+com/example/poorstore/Product.java
+ com.example.poorstore.Product
 com/example/poorstore/ClientRepository.java
  com.example.poorstore.ClientRepository
+com/example/poorstore/ProductRepository.java
+ com.example.poorstore.ProductRepository
 com/example/poorstore/ListClientsController.java
  com.example.poorstore.ListClientsController
+com/example/poorstore/NewProductController.java
+ com.example.poorstore.NewProductController
 com/example/poorstore/UserDetailsServiceImpl.java
  com.example.poorstore.UserDetailsServiceImpl
+com/example/poorstore/NewOrderController.java
+ com.example.poorstore.NewOrderController
 com/example/poorstore/NewClientController.java
  com.example.poorstore.NewClientController
 com/example/poorstore/OrdersRepository.java
@@ -14,8 +22,8 @@ com/example/poorstore/MyUserDetails.java
  com.example.poorstore.MyUserDetails
 com/example/poorstore/Client.java
  com.example.poorstore.Client
-com/example/poorstore/NewOrderController.java
- com.example.poorstore.NewOrderController
+com/example/poorstore/ListProductsController.java
+ com.example.poorstore.ListProductsController
 com/example/poorstore/MvcConfig.java
  com.example.poorstore.MvcConfig
 com/example/poorstore/ListOrdersController.java

@@ -15,21 +15,21 @@ public class ListProductsController {
     private static final Logger log = LoggerFactory.getLogger(ListProductsController.class);
 
     @Autowired
-    private ProductRepository repository;
+    private ProductRepository productRepository;
 
-    @GetMapping("/list-products")
-    public String listClients(Model model)
+    @GetMapping("/homepage")
+    public String listProducts(Model model)
     {
-        List<Product> productList = (List<Product>) repository.findAll();
+        List<Product> productList = (List<Product>) productRepository.findAll();
 
         log.info("Products found with findAll():");
         log.info("-------------------------------");
-        for (Product product : repository.findAll()) {
+        for (Product product : productRepository.findAll()) {
             log.info(product.toString());
         }
         log.info("");
 
         model.addAttribute("productList", productList);
-        return "list-products-view";
+        return "homepage";
     }
 }

@@ -17,16 +17,16 @@ public class ListClientsController {
 	private static final Logger log = LoggerFactory.getLogger(ListClientsController.class);
 
     @Autowired
-    private ClientRepository repository;
+    private ClientRepository clientRepository;
     
 	@GetMapping("/list-clients")
 	public String listClients(Model model) 
 	{		
-		List<Client> customerList = (List<Client>) repository.findAll();
+		List<Client> customerList = (List<Client>) clientRepository.findAll();
 		
 		log.info("Customers found with findAll():");
 		log.info("-------------------------------");
-		for (Client client : repository.findAll()) {
+		for (Client client : clientRepository.findAll()) {
 			log.info(client.toString());
 		}
 		log.info("");

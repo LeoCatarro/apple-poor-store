@@ -6,7 +6,9 @@ import java.util.List;
 
 public interface ProductRepository extends CrudRepository<Product, Long> {
 
-    List<Product> findByProductName(String productName);
+    List<Product> findByCategory(String category);
 
     Product findById(long id);
+
+    List<Product> findByProductName(String productName);
 }

@@ -82,6 +82,7 @@ header {
     text-decoration: none;
 }
 
+
 .lista_categorias li#notebooks{
     color:white;
     font-weight: bold;
@@ -104,6 +105,10 @@ header {
     width: 100%;
     border: 1px solid grey;
     margin-left: 20px;
+}
+
+.prods_hr {
+    flex-direction: column-reverse;
 }
 
 .products li {

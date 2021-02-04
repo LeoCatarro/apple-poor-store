@@ -1,10 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
-    <h1>TO IMPLEMENT!!</h1>
+    <p th:text="'Foi criado o produto com o nome: ' + ${productName} + '!'" />
+    <p th:text="'Foi criado o produto com o preco: ' + ${price} + '!'" />
+    <p th:text="'Foi criado o produto com a quantidade: ' + ${quantity} + '!'" />
+    <p th:text="'Foi criado o produto com a descricao: ' + ${description} + '!'" />
+    <p th:text="'Foi criado o produto com a categoria: ' + ${category} + '!'" />
 </body>
 </html>

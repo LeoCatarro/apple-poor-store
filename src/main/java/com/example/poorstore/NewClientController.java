@@ -17,7 +17,7 @@ public class NewClientController {
 	private static final Logger log = LoggerFactory.getLogger(NewClientController.class);
 
     @Autowired
-    private ClientRepository repository;
+    private ClientRepository clientRepository;
     
 	@PostMapping("/new-client")
 	public String newClient(
@@ -29,11 +29,11 @@ public class NewClientController {
 			Model model) 
 	{
 
-		repository.save(new Client(firstName, lastName, mail, username, passwordEncoder.encode(password), "ROLE_USER"));
+		clientRepository.save(new Client(firstName, lastName, mail, username, passwordEncoder.encode(password), "ROLE_USER"));
 		
 		log.info("Customers found with findAll():");
 		log.info("-------------------------------");
-		for (Client aClient : repository.findAll()) {
+		for (Client aClient : clientRepository.findAll()) {
 			log.info(aClient.toString());
 		}
 		log.info("");
