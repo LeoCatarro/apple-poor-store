@@ -11,7 +11,7 @@ public class Product {
     private Long id;
 
     @Column
-    private String productName,description, category;
+    private String productName,description, category, imgUrl;
 
     @Column
     private Integer price, quantity;
@@ -19,20 +19,21 @@ public class Product {
 
     public Product() {}
 
-    public Product(String productName, String description, Integer price, Integer quantity, String category) {
+    public Product(String productName, String description, Integer price, Integer quantity, String category, String imgUrl) {
         this.productName = productName;
         this.description = description;
         this.price = price;
         this.quantity = quantity;
         this.category = category;
+        this.imgUrl = imgUrl;
 
     }
 
     @Override
     public String toString() {
         return String.format(
-                "Product[id=%d, productName='%s', price='%d', quantity='%d', description='%s', category='%s']",
-                id, productName, price, quantity, description, category);
+                "Product[id=%d, productName='%s', price='%d', quantity='%d', description='%s', category='%s', imgUrl='%s']",
+                id, productName, price, quantity, description, category, imgUrl);
     }
 
     public Long getId() {
@@ -56,4 +57,6 @@ public class Product {
     }
 
     public String getCategory() { return category; }
+
+    public String getImgUrl() { return imgUrl; }
 }

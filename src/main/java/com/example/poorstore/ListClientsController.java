@@ -18,9 +18,10 @@ public class ListClientsController {
 
     @Autowired
     private ClientRepository clientRepository;
-    
+
+
 	@GetMapping("/list-clients")
-	public String listClients(Model model) 
+	public String listClients(Model model)
 	{		
 		List<Client> customerList = (List<Client>) clientRepository.findAll();
 		

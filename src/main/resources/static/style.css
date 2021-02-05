@@ -408,3 +408,13 @@ footer {
     display:flex;
     justify-content: center;
 }
+
+.add_client_form label{
+    display: inline-block;
+    min-width: 110px;
+}
+
+.login_form label{
+    display: inline-block;
+    min-width: 110px;
+}
