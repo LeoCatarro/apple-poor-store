@@ -5,9 +5,11 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.repository.Modifying;
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -50,5 +52,21 @@ public class NewProductController {
         model.addAttribute("imgUrl", imgUrl);
 
         return "new-product-view";
+    }
+
+    @RequestMapping("remove-product/{id}")
+    public String removeProduct(Model model, @PathVariable("id") long id) {
+
+        Product product = productRepository.findById(id);
+
+        log.info("Product found:");
+        log.info("-------------------------------");
+        log.info(product.toString());
+
+        log.info("");
+
+        productRepository.delete(product);
+
+        return "list-products-view";
     }
 }

@@ -48,14 +48,19 @@
                 <ul class="list" style="list-style-type:none;">
                     <li th:each="product: ${productList}">
                         <div class="product_img">
-                            <a href="/product"><img src="@{product.imgUrl}"></a>
+                            <a th:href="@{/product/{id} (id = ${product.id})}"><img src="@{product.imgUrl}"></a>
                         </div>
                         <div class="about_prod">
-                            <a href="/product"><h1 class="brand_model" th:text="${product.productName}"></h1></a>
+                            <a th:href="@{/product/{id} (id = ${product.id})}"><h1 class="brand_model" th:text="${product.productName}"></h1></a>
                             <p class="description" th:text="${product.description}"></p>
                             <p class="price" th:text="${product.price} + '€'"></p>
                         </div>
 
+                        <a sec:authorize="hasAnyRole('ADMIN')" th:href="@{/remove-product/{id} (id = ${product.id})}">
+                            <sec:authorize access="hasAnyRole('ADMIN')" >
+                                <button>Remove</button>
+                            </sec:authorize>
+                        </a>
                         <!--<hr>-->    <!--Linha horizontal que separa os produtos-->
                     </li>
                 </ul>
@@ -64,14 +69,23 @@
                 Categorias
             -->
             <div class="categorias">
+                <!--
                 <section>
                     <p class="title">CATEGORIAS</p>
                     <ul class="lista_categorias">
-                        <a href="/list-category"><li name="Notebooks">Notebooks</li></a>
-                        <a href="/list-category"><li name="Airpods">Airpods</li></a>
-                        <a href="/list-category"><li name="Desktops">Desktops</li></a>
+                        <a href="/list-category" th:action="@{/list-category}"><li th:value="${Notebooks}" name="Notebooks">Notebooks</li></a>
+                        <a href="/list-category"><li th:value="${Airpods}" name="Airpods">Airpods</li></a>
+                        <a href="/list-category"><li th:value="${Desktops}" name="Desktops">Desktops</li></a>
                     </ul>
                 </section>
+                -->
+                <p class="title">CATEGORIAS</p>
+                <form th:action="@{/list-category}" >
+                    <input type="submit" name="Notebooks" size="50"/>
+                    <input type="submit" name="Airpods" size="50"/>
+                    <input type="submit" name="Desktops" size="50"/>
+                </form>
+
             </div>
         </div>  <!--prods_categorias Close-->
         <!--

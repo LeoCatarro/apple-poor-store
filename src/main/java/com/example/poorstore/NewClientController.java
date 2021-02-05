@@ -18,6 +18,8 @@ public class NewClientController {
 
     @Autowired
     private ClientRepository clientRepository;
+
+	public PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
     
 	@PostMapping("/new-client")
 	public String newClient(
@@ -46,6 +48,4 @@ public class NewClientController {
 
 		return "login";
 	}
-
-	public PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
 }

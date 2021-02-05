@@ -29,9 +29,9 @@
             <input class="advanced_search_button" type="submit" value="Log Out" />
         </form>
 
-        <form sec:authorize="hasAnyRole('ADMIN')" th:action="@{/add-product}">
+        <form sec:authorize="hasAnyRole('ADMIN')" th:action="@{/remove-product}">
             <sec:authorize access="hasAnyRole('ADMIN')" >
-                <input class="advanced_search_button" type="submit" value="Add Product" />
+                <input class="advanced_search_button" type="submit" value="Remove" />
             </sec:authorize>
         </form>
     </div>
@@ -49,6 +49,12 @@
                         <p class="description" th:text="${product.description}"></p>
                         <p class="price" th:text="${product.price} + '€'"></p>
                     </div>
+
+                    <form sec:authorize="hasAnyRole('ADMIN')" th:action="@{/add-product}">
+                        <sec:authorize access="hasAnyRole('ADMIN')" >
+                            <input class="advanced_search_button" type="submit" value="Add Product" />
+                        </sec:authorize>
+                    </form>
 
                     <hr>    <!--Linha horizontal que separa os produtos-->
                 </li>

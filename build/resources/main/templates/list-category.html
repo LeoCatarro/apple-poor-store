@@ -18,7 +18,7 @@
     <div class="prods_categorias">      <!--Div que engloba os produtos e as categorias-->
         <section class="products">
             <ul class="list" style="list-style-type:none;">
-                <li th:each="product: ${productList}">
+                <li th:each="product: ${productListByCategory}">
                     <div class="product_img">
                         <a href="/product"><img src="@{product.imgUrl}"></a>
                     </div>
@@ -32,17 +32,6 @@
                 </li>
             </ul>
         </section>
-
-        <div class="categorias">
-            <section>
-                <p class="title">CATEGORIAS</p>
-                <ul class="lista_categorias">
-                    <a href="/list-category"><li id="notebooks">Notebooks</li></a>
-                    <a href="/list-category"><li>Airpods</li></a>
-                    <a href="/list-category"><li>Desktops</li></a>
-                </ul>
-            </section>
-        </div>
     </div>
 
     <footer class="rodape">

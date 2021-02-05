@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" xmlns:sec="">
+<head>
+    <meta charset="UTF-8">
+    <title>Apple Poor Store</title>
+</head>
+<body>
+    <h1>Remove Produto</h1>
+
+    <form sec:authorize="hasAnyRole('ADMIN')" th:action="@{/remove-product}">
+        <sec:authorize access="hasAnyRole('ADMIN')" >
+            <input class="advanced_search_button" type="submit" value="Remove"/>
+
+        </sec:authorize>
+    </form>
+</body>
+</html>

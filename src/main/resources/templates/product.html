@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html class="prod_html" xmlns:th="http://www.w3.org/1999/xhtml">
     <head>
-        <title>Apple Poor Store</title>
         <link rel="stylesheet" type="text/css" href="style.css" th:href="@{style.css}" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--Font de icons-->
-        <link href="https://fonts.googleapis.com/css2?family=Goldman&family=Roboto:wght@500&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap" rel="stylesheet"/> 
-        <script src="scripts/myscript.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/> <!--Font de icons-->
+        <link href="https://fonts.googleapis.com/css2?family=Goldman&family=Roboto:wght@500&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap" rel="stylesheet"/>
+        <title>Apple Poor Store</title>
     </head>
     <body>
-        <div class="CONTENT">
         <!--
             Cabeçalho
         -->
@@ -33,7 +31,22 @@
             Lista de Produtos
         -->
         <div class="prods_categorias">
+            <section class="products">
+                <ul class="list" style="list-style-type:none;">
+                    <li th:object="${prod}">
+                        <div class="product_img">
+                            <a href="/product"><img src="@{prod.imgUrl}"></a>
+                        </div>
+                        <div class="about_prod">
+                            <a href="/product"><h1 class="brand_model" th:text="${prod.productName}"></h1></a>
+                            <p class="description" th:text="${prod.description}"></p>
+                            <p class="price" th:text="${prod.price} + '€'"></p>
+                        </div>
 
+                        <!--<hr>-->    <!--Linha horizontal que separa os produtos-->
+                    </li>
+                </ul>
+            </section>
                 <!--
                 <section class="detalhes_produto">   
                         <h1 class="detalhes_brand_model">Mac Book Pro 16"</h1>

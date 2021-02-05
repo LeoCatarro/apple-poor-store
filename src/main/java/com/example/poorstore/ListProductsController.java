@@ -6,9 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import java.util.List;
 
@@ -53,4 +52,44 @@ public class ListProductsController {
         model.addAttribute("productListBy", productListBy);
         return "search";
     }
+
+    @RequestMapping("/list-category")
+    public String listProductsByCategory(Model model, @Param("category") String category) {
+
+        log.info("LOG:");
+        log.info(category);
+
+        List<Product> productListByCategory = (List<Product>) productRepository.findByCategory(category);
+
+        log.info("Products found with findAll():");
+        log.info("-------------------------------");
+        for (Product product : productListByCategory) {
+            log.info(product.toString());
+        }
+        log.info("");
+
+        model.addAttribute("productListByCategory", productListByCategory);
+
+        return "list-category";
+    }
+
+    @RequestMapping("product/{id}")
+    public String getProduct(Model model, @PathVariable("id") long id) {
+
+        Product prod = productRepository.findById(id);
+
+        log.info("Products found with findAll():");
+        log.info("-------------------------------");
+
+        log.info(prod.toString());
+
+        log.info("");
+
+        model.addAttribute("prod", prod);
+
+        return "product";
+    }
 }
+
+
+
