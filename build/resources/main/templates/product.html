@@ -35,10 +35,10 @@
                 <ul class="list" style="list-style-type:none;">
                     <li th:object="${prod}">
                         <div class="product_img">
-                            <a href="/product"><img src="@{prod.imgUrl}"></a>
+                            <a><img src="@{prod.imgUrl}"></a>
                         </div>
                         <div class="about_prod">
-                            <a href="/product"><h1 class="brand_model" th:text="${prod.productName}"></h1></a>
+                            <a><h1 class="brand_model" th:text="${prod.productName}"></h1></a>
                             <p class="description" th:text="${prod.description}"></p>
                             <p class="price" th:text="${prod.price} + '€'"></p>
                             <br>
@@ -68,7 +68,7 @@
             Butoes Next e Previous
         -->
         <div class="buttons">
-            <p style="display:inline">Previous</p><a href="index.html" class="previous">&#8249;</a>
+            <p style="display:inline">Previous</p><a href="/homepage" class="previous">&#8249;</a>
         </div>
         <!--
             Rodapé

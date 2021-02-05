@@ -2,35 +2,46 @@
 <html xmlns:th="http://www.thymeleaf.org" xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
 <head>
     <title>Apple Poor Store</title>
+    <link rel="stylesheet" type="text/css" href="style.css" th:href="@{style.css}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--Font de icons-->
+    <link href="https://fonts.googleapis.com/css2?family=Goldman&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap" rel="stylesheet"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
-    <h3>Adicionar Produto</h3>
-    <form method='post' th:action='@{/new-product}'>
+    <header>
+        <a href="/homepage"><img class="shop_logo" src="resources/static/images/apple_logo_black.png"></a>
+        <div class="header_stuff">
+        </div>
+    </header>
 
-        <label>Insira o seu nome:</label>
-        <input type="text" id="productName" name="productName"/>
-        </br>
-        <label>Insira a sua categoria:</label>
-        <input type="text" id="category" name="category"/>
-        </br>
-        <label>Insira o seu preço:</label>
-        <input type="number" id="price" name="price"/>
-        </br>
-        <label>Insira o seu quantidade:</label>
-        <input type="number" id="quantity" name="quantity"/>
-        </br>
-        <label>Insira a sua descrição:</label>
-        <input type="text" id="description" name="description"/>
-        </br>
-        <label>Insira o url da imagem:</label>
-        <input type="text" id="imgUrl" name="imgUrl"/>
-        </br>
-        <label>Insira a descrição detalhada:</label>
-        <textarea  type="textarea" id="fullDescription" name="fullDescription"></textarea>
+        <h3 style="align: center;">Adicionar Produto</h3>
+        <form style="align:center;" method='post' th:action='@{/new-product}'>
 
-        <input type="submit" value="Submit">
-    </form>
+            <label>Insira o seu nome:</label>
+            <input type="text" id="productName" name="productName"/>
+            </br>
+            <label>Insira a sua categoria:</label>
+            <input type="text" id="category" name="category"/>
+            </br>
+            <label>Insira o seu preço:</label>
+            <input type="number" id="price" name="price"/>
+            </br>
+            <label>Insira o seu quantidade:</label>
+            <input type="number" id="quantity" name="quantity"/>
+            </br>
+            <label>Insira a sua descrição:</label>
+            <input type="text" id="description" name="description"/>
+            </br>
+            <label>Insira o url da imagem:</label>
+            <input type="text" id="imgUrl" name="imgUrl"/>
+            </br>
+            <label>Insira a descrição detalhada:</label>
+            <textarea  type="textarea" id="fullDescription" name="fullDescription"></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+
 
     <!--
             RODAPE

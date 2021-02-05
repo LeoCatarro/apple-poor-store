@@ -36,16 +36,18 @@
         </form>
     </div>
     </header>
-    <h1>Search Results</h1>
+
+    <h1 align="center">Search Results</h1>
+    <p class="quantidade_produtos">5 de 5</p>
     <div class="prods_categorias">
         <section class="products">
             <ul class="list" style="list-style-type:none;">
                 <li th:each="product: ${productListBy}">
                     <div class="product_img">
-                        <a href="/product"><img src="@{product.imgUrl}"></a>
+                        <a th:href="@{/product/{id} (id = ${product.id})}"><img src="@{product.imgUrl}"></a>
                     </div>
                     <div class="about_prod">
-                        <a href="/product"><h1 class="brand_model" th:text="${product.productName}"></h1></a>
+                        <a th:href="@{/product/{id} (id = ${product.id})}"><h1 class="brand_model" th:text="${product.productName}"></h1></a>
                         <p class="description" th:text="${product.description}"></p>
                         <p class="price" th:text="${product.price} + '€'"></p>
                     </div>
@@ -61,6 +63,7 @@
             </ul>
         </section>
     </div>
+
     <!--
             Rodapé
         -->
