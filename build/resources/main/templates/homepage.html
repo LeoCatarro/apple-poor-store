@@ -15,8 +15,13 @@
             <a href="/homepage"><img class="shop_logo" src="media/apple_logo_black.png"></a>
            
             <div class="header_stuff">
-                <input class="search_bar" type="text" placeholder="Search For Products...">
-                <a><button class="search_button" type="submit"><i class="fa fa-search"></i></button></a>
+                <form th:action="@{/search}">
+                    <input type="text" name="keyword" id="keyword" size="50" th:value="${keyword}" required />
+                    &nbsp;
+                    <input type="submit" value="Search" />
+                    &nbsp;
+                    <input type="button" value="Clear" id="btnClear" onclick="clearSearch()" />
+                </form>
 
                 <a href="/advanced-search">
                     <button class="advanced_search_button" type="button">Advanced Search</button> 
@@ -70,7 +75,7 @@
                 <section>
                     <p class="title">CATEGORIAS</p>
                     <ul class="lista_categorias">
-                        <a href="/list-category"><li id="notebooks" name="Notebooks">Notebooks</li></a>
+                        <a href="/list-category"><li name="Notebooks">Notebooks</li></a>
                         <a href="/list-category"><li name="Airpods">Airpods</li></a>
                         <a href="/list-category"><li name="Desktops">Desktops</li></a>
                     </ul>

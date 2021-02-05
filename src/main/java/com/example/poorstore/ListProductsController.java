@@ -3,9 +3,11 @@ package com.example.poorstore;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
@@ -17,6 +19,9 @@ public class ListProductsController {
 
     @Autowired
     private ProductRepository productRepository;
+
+    @Autowired
+    private ProductService service;
 
     @GetMapping("/homepage")
     public String listProducts(Model model)
@@ -34,19 +39,18 @@ public class ListProductsController {
         return "homepage";
     }
 
-    @GetMapping("/list-category")
-    public String listProductsByCategory(Model model)
-    {
-        List<Product> productList = (List<Product>) productRepository.findAllByCategory("Notebooks");
+    @RequestMapping("/search")
+    public String listProductsBySearch(Model model, @Param("keyword") String keyword) {
+        List<Product> productListBy = (List<Product>) productRepository.search(keyword);
 
-        log.info("Products found with findAllByCategory():");
+        log.info("Products found with findAll():");
         log.info("-------------------------------");
-        for (Product product : productRepository.findAllByCategory("Notebooks")) {
+        for (Product product : productListBy) {
             log.info(product.toString());
         }
         log.info("");
 
-        model.addAttribute("productList", productList);
-        return "homepage";
+        model.addAttribute("productListBy", productListBy);
+        return "search";
     }
 }

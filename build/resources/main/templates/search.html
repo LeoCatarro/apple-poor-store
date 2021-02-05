@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Page</title>
+</head>
+<body>
+<table>
+    <tr th:each="product: ${productListBy}">
+        <td th:text="'ID: ' + ${product.id}"/>
+        <td th:text="'Nome: ' + ${product.productName}"/>
+        <td th:text="'Preço: ' + ${product.price}"/>
+        <td th:text="'Quantidade: ' + ${product.quantity}"/>
+        <td th:text="'Descrição: ' + ${product.description}"/>
+        <td th:text="'Categoria: ' + ${product.category}"/>
+        <td th:text="'Url da Imagem: ' + ${product.imgUrl}"/>
+    </tr>
+</body>
+</html>
