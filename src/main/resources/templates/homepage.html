@@ -39,7 +39,7 @@
             Quantidade de Produtos
         -->
 
-        <p class="quantidade_produtos">5 de 5</p>
+        <p class="quantidade_produtos" th:text="${productList.size()}"></p>
         <!--
             Lista de Produtos
         -->
@@ -61,7 +61,8 @@
                                 <button>Remove</button>
                             </sec:authorize>
                         </a>
-                        <!--<hr>-->    <!--Linha horizontal que separa os produtos-->
+
+                        <hr>   <!--Linha horizontal que separa os produtos-->
                     </li>
                 </ul>
             </section>
@@ -69,23 +70,14 @@
                 Categorias
             -->
             <div class="categorias">
-                <!--
                 <section>
                     <p class="title">CATEGORIAS</p>
                     <ul class="lista_categorias">
-                        <a href="/list-category" th:action="@{/list-category}"><li th:value="${Notebooks}" name="Notebooks">Notebooks</li></a>
-                        <a href="/list-category"><li th:value="${Airpods}" name="Airpods">Airpods</li></a>
-                        <a href="/list-category"><li th:value="${Desktops}" name="Desktops">Desktops</li></a>
+                        <a href="#"><li id="notebooks">Notebooks </li></a>
+                        <a href="#"><li>Airpods</li></a>
+                        <a href="#"><li>Desktops</li></a>
                     </ul>
                 </section>
-                -->
-                <p class="title">CATEGORIAS</p>
-                <form th:action="@{/list-category}" >
-                    <input type="submit" name="Notebooks" size="50"/>
-                    <input type="submit" name="Airpods" size="50"/>
-                    <input type="submit" name="Desktops" size="50"/>
-                </form>
-
             </div>
         </div>  <!--prods_categorias Close-->
         <!--

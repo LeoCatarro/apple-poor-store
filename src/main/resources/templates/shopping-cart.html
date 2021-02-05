@@ -12,20 +12,25 @@
 
 </head>
 <body>
+    <p>Lista de produtos adicionados ao carrinho</p>
+    <p th:text="${client.products}" />
 
-<p>Lista de produtos adicionados ao carrinho</p>
-<p th:text="${client.products}" />
-
-<p>Lista de produtos</p>
-<table>
-    <tr th:each="products: ${client.products}">
-        <td th:text="'ID: ' + ${product.id}"/>
-        <td th:text="'Nome: ' + ${product.productName}"/>
-        <td th:text="'Preço: ' + ${product.price}"/>
-        <td th:text="'Quantidade: ' + ${product.quantity}"/>
-        <td th:text="'Descrição: ' + ${product.description}"/>
-        <td th:text="'Categoria: ' + ${product.category}"/>
-    </tr>
-</table>
+    <p>Lista de produtos</p>
+    <table>
+        <tr th:each="products: ${client.products}">
+            <td th:text="'ID: ' + ${product.id}"/>
+            <td th:text="'Nome: ' + ${product.productName}"/>
+            <td th:text="'Preço: ' + ${product.price}"/>
+            <td th:text="'Quantidade: ' + ${product.quantity}"/>
+            <td th:text="'Descrição: ' + ${product.description}"/>
+            <td th:text="'Categoria: ' + ${product.category}"/>
+        </tr>
+    </table>
+    <!--
+            RODAPE
+    -->
+    <footer class="rodape">
+        <a href="/about"><p class="about_page">About this page</p></a>
+    </footer>
 </body>
 </html>
