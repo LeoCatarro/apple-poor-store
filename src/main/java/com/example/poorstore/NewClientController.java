@@ -43,7 +43,8 @@ public class NewClientController {
 		model.addAttribute("mail", mail);
 		model.addAttribute("username", username);
 		model.addAttribute("password", password);
-		return "new-client-view";
+
+		return "login";
 	}
 
 	public PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
