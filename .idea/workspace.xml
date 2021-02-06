@@ -5,52 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d3b12459-9114-4d87-bb20-df9d417585d0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/fileContent/fileContent.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/about-this-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/about-this-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/advanced-search.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/advanced-search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/homepage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/list-clients-view.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/list-clients-view.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/list-orders-view.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/list-orders-view.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/list-products-view.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/list-products-view.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/new-client-view.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/new-client-view.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/new-client.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/new-client.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/new-order-view.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/new-order-view.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/new-order.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/new-order.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/new-product-view.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/new-product-view.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/new-product.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/new-product.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/product.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/remove-product.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/remove-product.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/shopping-cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/shopping-cart.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/about-this-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/about-this-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/advanced-search.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/advanced-search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/homepage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/list-clients-view.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/list-clients-view.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/list-orders-view.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/list-orders-view.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/list-products-view.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/list-products-view.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/new-client-view.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/new-client-view.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/new-client.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/new-client.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/new-order-view.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/new-order-view.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/new-order.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/new-order.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/new-product-view.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/new-product-view.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/new-product.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/new-product.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/product.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/remove-product.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/remove-product.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/shopping-cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/shopping-cart.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/test.mv.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/test.trace.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
