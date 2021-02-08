@@ -51,13 +51,6 @@
                         <p class="description" th:text="${product.description}"></p>
                         <p class="price" th:text="${product.price} + '€'"></p>
                     </div>
-
-                    <form sec:authorize="hasAnyRole('ADMIN')" th:action="@{/add-product}">
-                        <sec:authorize access="hasAnyRole('ADMIN')" >
-                            <input class="advanced_search_button" type="submit" value="Add Product" />
-                        </sec:authorize>
-                    </form>
-
                     <hr>    <!--Linha horizontal que separa os produtos-->
                 </li>
             </ul>
