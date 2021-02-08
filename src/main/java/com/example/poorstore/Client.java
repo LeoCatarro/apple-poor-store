@@ -14,8 +14,8 @@ public class Client {
 	@Column
 	private String firstName, lastName, mail, username, password, role;
 
-	@OneToMany(mappedBy = "client")
-    	private List<Orders> orders;
+	/*@OneToMany(mappedBy = "client")
+    	private List<Orders> orders;*/
 
 	public Client() {}
 

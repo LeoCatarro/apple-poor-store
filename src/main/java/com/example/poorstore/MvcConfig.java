@@ -16,7 +16,6 @@ public class MvcConfig implements WebMvcConfigurer {
 		registry.addViewController("/add-client").setViewName("new-client");
 		registry.addViewController("/add-product").setViewName("new-product");
 		registry.addViewController("/remove-product").setViewName("remove-product");
-		registry.addViewController("/add-order").setViewName("new-order");
 		registry.addViewController("/homepage").setViewName("homepage");
 		registry.addViewController("/shopping-cart").setViewName("shopping-cart");
 		registry.addViewController("/advanced-search").setViewName("advanced-search");
@@ -26,6 +25,8 @@ public class MvcConfig implements WebMvcConfigurer {
 		registry.addViewController("/search").setViewName("search");
 		registry.addViewController("/product/{id}").setViewName("product");
 		registry.addViewController("/remove-product/{id}").setViewName("remove-product");
+		registry.addViewController("/add-to-cart").setViewName("add-to-cart");
+		registry.addViewController("/product/{id}/add-to-cart").setViewName("add-to-cart");
 
 	}
 }

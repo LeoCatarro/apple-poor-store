@@ -1,40 +1,42 @@
 package com.example.poorstore;
 
+import org.hibernate.criterion.Order;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 
 @Controller
 public class NewOrderController {
 
+	private static final Logger log = LoggerFactory.getLogger(NewProductController.class);
+
     @Autowired
-    private ClientRepository clientRepository;
+    private ProductRepository productRepository;
     
     @Autowired
     private OrdersRepository ordersRepository;
-    
-    @PostMapping("/new-order")
-	public String newOrder(
-			@RequestParam(name="clientID", required=false) long clientID, 
-			@RequestParam(name="entry", required=false, defaultValue="") String entry,
-			@RequestParam(name="mainCourse", required=false, defaultValue="") String mainCourse,
-			@RequestParam(name="drink", required=false, defaultValue="") String drink,
-			@RequestParam(name="dessert", required=false, defaultValue="") String dessert,
-			Model model) 
+
+	@RequestMapping("/product/{id}/add-to-cart")
+	public void newOrder(Model model, @PathVariable("id") long id)
 	{
-		
-		Client client = clientRepository.findById(clientID);
-		ordersRepository.save(new Orders(client, entry, mainCourse, drink, dessert));
 
-		model.addAttribute("clientID", clientID);
-		model.addAttribute("entry", entry);
-		model.addAttribute("mainCourse", mainCourse);
-		model.addAttribute("drink", drink);
-		model.addAttribute("dessert", dessert);
+		ordersRepository.save(new Orders(id));
 
-		return "new-order-view";
+
+		log.info("Orders found with findAll():");
+		log.info("-------------------------------");
+		for (Orders aOrder : ordersRepository.findAll()) {
+			log.info(aOrder.toString());
+		}
+		log.info("");
+
+		model.addAttribute("id", id);
 	}
 }

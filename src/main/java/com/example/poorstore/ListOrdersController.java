@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 
@@ -15,15 +16,15 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class ListOrdersController {
 
     @Autowired
-    private OrdersRepository repository;
+    private OrdersRepository orderRepository;
 	
-	@GetMapping("/list-orders")
+	@RequestMapping("/shopping-cart")
 	public String listOrders(Model model) 
 	{
-		List<Orders> ordersList = (List<Orders>) repository.findAll();
+		List<Orders> ordersList = (List<Orders>) orderRepository.findAll();
 
-		model.addAttribute("ordersList", ordersList);
-		System.out.print(ordersList);
-		return "list-orders-view";
+		model.addAttribute("orderList", ordersList);
+		//System.out.print(ordersList);
+		return "shopping-cart";
 	}
 }

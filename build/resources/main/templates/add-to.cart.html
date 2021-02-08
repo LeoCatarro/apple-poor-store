@@ -10,30 +10,8 @@
 </head>
 <body>
     <h3>Criar encomenda</h3>
-    <form method='post' th:action='@{/new-order}'>
-		
-		<label>ID do Cliente:</label>
-		<input type="text" id="clientID" name="clientID"/> 
-		</br>
-		
-		<label>Entrada:</label>
-		<input type="text" id="entry" name="entry"/>
-		</br>
-
-		<label>Prato Principal:</label>
-		<input type="text" id="mainCourse" name="mainCourse"/>
-		</br>
-		
-		<label>Bebida:</label>
-		<input type="text" id="drink" name="drink"/>
-		</br>
-
-		<label>Sobremesa:</label>
-		<input type="text" id="dessert" name="dessert"/> 
-		</br>	
-		
+    <form method='post' th:action='@{/add-to-cart}'>
 		<input type="submit" value="Submit">
-
 	</form>
 
 	<form method='post' th:action='@{/logout}'>

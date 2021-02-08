@@ -32,6 +32,12 @@
     </header>
 
     <h3 align="center">Produtos Adicionados ao Carrinho</h3>
+    <table align="center">
+        <tr class="list"  th:each="order: ${orderList}">
+            <td th:text="'ID: ' + ${order.id}"/>
+            <td th:text="'ProductID: ' + ${order.productID}"/>
+        </tr>
+    </table>
 
     <!--
             RODAPE

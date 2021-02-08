@@ -5,13 +5,47 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d3b12459-9114-4d87-bb20-df9d417585d0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/fileContent/fileContent.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/apple-poor-store.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/poorstore/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/poorstore/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/poorstore/ListClientsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/poorstore/ListClientsController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/poorstore/ListOrdersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/poorstore/ListOrdersController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/poorstore/ListProductsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/poorstore/ListProductsController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/poorstore/MvcConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/poorstore/MvcConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/poorstore/NewClientController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/poorstore/NewClientController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/poorstore/NewOrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/poorstore/NewOrderController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/poorstore/NewProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/poorstore/NewProductController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/poorstore/Orders.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/poorstore/Orders.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/list-orders-view.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/list-orders-view.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/new-order-view.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/new-order-view.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/new-order.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/shopping-cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/shopping-cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/poorstore/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/poorstore/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/poorstore/ListOrdersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/poorstore/ListOrdersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/poorstore/MvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/poorstore/MvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/poorstore/NewOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/poorstore/NewOrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/poorstore/Orders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/poorstore/Orders.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/list-orders-view.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/list-orders-view.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/list-products-view.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/list-products-view.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/new-order-view.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/new-order-view.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/new-order.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/add-to.cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/shopping-cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/shopping-cart.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/test.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/test.trace.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
