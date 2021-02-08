@@ -15,8 +15,10 @@
             <a href="/homepage"><img class="shop_logo" src="images/apple_logo_black.png"></a>
            
             <div class="header_stuff">
-                <input class="search_bar" type="text" placeholder="Search For Products...">
-                <a href="http://localhost:8080/search.html"><button class="search_button" type="submit"><i class="fa fa-search"></i></button></a>      
+                <form th:action="@{/search}">
+                    <input type="text" name="keyword" id="keyword" size="50" th:value="${keyword}" required />
+                    <input class="advanced_search_button" type="submit" value="Search" />
+                </form>
 
                 <a href="advanced_search.html">
                     <button class="advanced_search_button" type="button">Advanced Search</button> 

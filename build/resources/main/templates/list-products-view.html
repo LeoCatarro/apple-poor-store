@@ -51,7 +51,7 @@
         <ul class="list" style="list-style-type:none;">
             <li th:object="${prod}">
                 <div class="product_img">
-                    <img src="@{prod.imgUrl}">
+                    <img src="${prod.imgUrl}">
                 </div>
                 <div class="about_prod">
                     <a href="/product"><h1 class="brand_model" th:text="${prod.productName}"></h1></a>

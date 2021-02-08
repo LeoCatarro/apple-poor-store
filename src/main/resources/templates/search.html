@@ -38,13 +38,13 @@
     </header>
 
     <h1 align="center">Search Results</h1>
-    <p class="quantidade_produtos">5 de 5</p>
+    <p class="quantidade_produtos" th:text="${productListBy.size()}"></p>
     <div class="prods_categorias">
         <section class="products">
             <ul class="list" style="list-style-type:none;">
                 <li th:each="product: ${productListBy}">
                     <div class="product_img">
-                        <a th:href="@{/product/{id} (id = ${product.id})}"><img src="@{product.imgUrl}"></a>
+                        <a th:href="@{/product/{id} (id = ${product.id})}"><img src="${product.imgUrl}"></a>
                     </div>
                     <div class="about_prod">
                         <a th:href="@{/product/{id} (id = ${product.id})}"><h1 class="brand_model" th:text="${product.productName}"></h1></a>
