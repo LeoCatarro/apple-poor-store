@@ -16,20 +16,23 @@
 
 </head>
 <body>
-    <p>Lista de produtos adicionados ao carrinho</p>
-    <p th:text="${client.products}" />
+    <header>
+        <a href="/homepage"><img class="shop_logo" src="images/apple_logo_black.png"></a>
 
-    <p>Lista de produtos</p>
-    <table>
-        <tr th:each="products: ${client.products}">
-            <td th:text="'ID: ' + ${product.id}"/>
-            <td th:text="'Nome: ' + ${product.productName}"/>
-            <td th:text="'Preço: ' + ${product.price}"/>
-            <td th:text="'Quantidade: ' + ${product.quantity}"/>
-            <td th:text="'Descrição: ' + ${product.description}"/>
-            <td th:text="'Categoria: ' + ${product.category}"/>
-        </tr>
-    </table>
+        <div class="header_stuff">
+            <form th:action="@{/search}">
+                <input type="text" name="keyword" id="keyword" size="50" th:value="${keyword}" required />
+                <input class="advanced_search_button" type="submit" value="Search" />
+            </form>
+
+            <a href="advanced_search.html">
+                <button class="advanced_search_button" type="button">Advanced Search</button>
+            </a>
+        </div>
+    </header>
+
+    <h3 align="center">Produtos Adicionados ao Carrinho</h3>
+
     <!--
             RODAPE
     -->

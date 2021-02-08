@@ -38,6 +38,10 @@
                 <a href="/">
                     <button sec:authorize="!isAuthenticated()" class="advanced_search_button" type="button">Login</button>
                 </a>
+
+                <a href="/shopping-cart">
+                    <button sec:authorize="isAuthenticated()" class="advanced_search_button" type="button">Cart</button>
+                </a>
             </div>
         </header>
         <!--

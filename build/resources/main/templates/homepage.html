@@ -38,6 +38,10 @@
                 <a href="/">
                     <button sec:authorize="!isAuthenticated()" class="advanced_search_button" type="button">Login</button>
                 </a>
+
+                <a href="/shopping-cart">
+                    <button sec:authorize="isAuthenticated()" class="advanced_search_button" type="button">Cart</button>
+                </a>
             </div>
         </header>
         <!--
@@ -79,7 +83,7 @@
                     <p class="title">CATEGORIAS</p>
                     <ul class="lista_categorias">
                         <a href="/list-category"><li id="notebooks">Notebooks </li></a>
-                        <a onclick="listProductsByCategory(Model model, @Param('category'), 'Airpods')"><li>Airpods</li></a>
+                        <a href="#"><li>Airpods</li></a>
                         <a href="#"><li>Desktops</li></a>
                     </ul>
                     </form>
