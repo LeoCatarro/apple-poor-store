@@ -73,8 +73,8 @@ public class ListProductsController {
         return "list-category";
     }
 
-    @RequestMapping("product/{id}")
-    public String getProduct(Model model, @PathVariable("id") long id) {
+    @RequestMapping("/product/{id}")
+    public String getProduct(Model model, @PathVariable long id) {
 
         Product prod = productRepository.findById(id);
 

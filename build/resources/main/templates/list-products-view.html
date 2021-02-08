@@ -3,7 +3,7 @@
 <head>
     <title>Apple Poor Store</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" th:href="@{style.css}" />
+    <link rel="stylesheet" href="css/style.css" th:href="@{/css/style.css}" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--Font de icons-->
     <link href="https://fonts.googleapis.com/css2?family=Goldman&family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap" rel="stylesheet"/>
@@ -46,12 +46,12 @@
             </a>
         </div>
     </header>
-    <!--
+
     <section class="products">
         <ul class="list" style="list-style-type:none;">
             <li th:object="${prod}">
                 <div class="product_img">
-                    <a href="/product"><img src="@{prod.imgUrl}"></a>
+                    <img src="@{prod.imgUrl}">
                 </div>
                 <div class="about_prod">
                     <a href="/product"><h1 class="brand_model" th:text="${prod.productName}"></h1></a>
@@ -63,7 +63,7 @@
             </li>
         </ul>
     </section>
-    -->
+
 
     <table>
         <tr th:each="product: ${productList}">

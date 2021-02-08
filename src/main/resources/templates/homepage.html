@@ -3,7 +3,7 @@
       xmlns:c="http://www.w3.org/1999/xhtml" use-expressions="true">
     <head>
         <title>Apple Poor Store</title>
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" type="text/css" th:href="@{css/style.css}">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--Font de icons-->
         <link href="https://fonts.googleapis.com/css2?family=Goldman&family=Roboto:wght@500&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap" rel="stylesheet"/>
@@ -49,10 +49,10 @@
                 <ul class="list" style="list-style-type:none;">
                     <li th:each="product: ${productList}">
                         <div class="product_img">
-                            <a th:href="@{/product/{id} (id = ${product.id})}"><img th:src="@{product.imgUrl}"></a>
+                            <a th:href="@{/product} + @{/{id} (id = ${product.id})}"><img th:src="${product.imgUrl}"></a>
                         </div>
                         <div class="about_prod">
-                            <a th:href="@{/product/{id} (id = ${product.id})}"><h1 class="brand_model" th:text="${product.productName}"></h1></a>
+                            <a th:href="@{/product} + @{/{id} (id = ${product.id})}"><h1 class="brand_model" th:text="${product.productName}"></h1></a>
                             <p class="description" th:text="${product.description}"></p>
                             <p class="price" th:text="${product.price} + '€'"></p>
                         </div>
@@ -93,5 +93,7 @@
         <footer class="rodape">
             <a href="/about"><p class="about_page">About this page</p></a>
         </footer>
+
+        <link rel="stylesheet" type="text/css" th:href="@{css/style.css}">
     </body>
 </html> 
