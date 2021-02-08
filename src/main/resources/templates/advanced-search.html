@@ -2,7 +2,7 @@
 <html xmlns:th="http://www.w3.org/1999/xhtml">
     <head>
         <title>Apple Poor Store</title>
-        <link rel="stylesheet" type="text/css" href="css/style.css" th:href="@{style.css}" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" th:href="@{css/style.css}" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--Font de icons-->
         <link href="https://fonts.googleapis.com/css2?family=Goldman&family=Roboto:wght@500&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap" rel="stylesheet"/>
@@ -15,10 +15,12 @@
             <a href="/homepage"><img class="shop_logo" src="images/apple_logo_black.png"></a>
            
             <div class="header_stuff">
-                <input class="search_bar" type="text" placeholder="Search For Products...">
-                <a href="http://localhost:8080/search.html"><button class="search_button" type="submit"><i class="fa fa-search"></i></button></a>      
+                <form th:action="@{/search}">
+                    <input type="text" name="keyword" id="keyword" size="50" th:value="${keyword}" required />
+                    <input class="advanced_search_button" type="submit" value="Search" />
+                </form>
 
-                <a href="advanced_search.html">
+                <a href="/advanced-search">
                     <button class="advanced_search_button" type="button">Advanced Search</button> 
                 </a>
             </div>

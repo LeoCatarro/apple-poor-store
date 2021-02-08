@@ -2,8 +2,8 @@ com/example/poorstore/ProductService.java
  com.example.poorstore.ProductService
 com/example/poorstore/ClientRepository.java
  com.example.poorstore.ClientRepository
-com/example/poorstore/ListProductsController.java
- com.example.poorstore.ListProductsController
+com/example/poorstore/MvcConfig.java
+ com.example.poorstore.MvcConfig
 com/example/poorstore/ListClientsController.java
  com.example.poorstore.ListClientsController
 com/example/poorstore/ListOrdersController.java
@@ -33,5 +33,5 @@ com/example/poorstore/ProductRepository.java
  com.example.poorstore.ProductRepository
 com/example/poorstore/NewProductController.java
  com.example.poorstore.NewProductController
-com/example/poorstore/MvcConfig.java
- com.example.poorstore.MvcConfig
+com/example/poorstore/ListProductsController.java
+ com.example.poorstore.ListProductsController

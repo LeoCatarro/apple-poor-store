@@ -25,10 +25,7 @@
                 </a>
             </div>
         </header>
-        <!--
-            Quantidade de Produtos
-        -->
-        <p class="quantidade_produtos"></p>
+
         <!--
             Lista de Produtos
         -->
@@ -37,7 +34,7 @@
                 <ul class="list" style="list-style-type:none;">
                     <li th:object="${prod}">
                         <div class="product_img">
-                            <img src="${prod.imgUrl}">
+                            <img th:src="${prod.imgUrl}">
                         </div>
                         <div class="about_prod">
                             <a><h1 class="brand_model" th:text="${prod.productName}"></h1></a>
@@ -47,14 +44,13 @@
                             <br>
                             <p class="description" th:text="${prod.fullDescription}"></p>
                         </div>
-
-                        <!--<hr>-->    <!--Linha horizontal que separa os produtos-->
                     </li>
                 </ul>
             </section>
             <!--
                 Categorias
             -->
+            <!--
             <div class="categorias">
                 <section>
                     <p class="title">CATEGORIAS</p>
@@ -65,6 +61,7 @@
                     </ul>
                 </section>
             </div>
+            -->
         </div>  <!--prods_cateogiras Close-->
         <!--
             Butoes Next e Previous

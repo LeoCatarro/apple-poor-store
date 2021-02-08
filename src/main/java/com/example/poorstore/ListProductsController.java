@@ -59,7 +59,7 @@ public class ListProductsController {
         log.info("LOG:");
         log.info(category);
 
-        List<Product> productListByCategory = (List<Product>) productRepository.findByCategory(category);
+        List<Product> productListByCategory = (List<Product>) productRepository.findByCategory("Notebooks");
 
         log.info("Products found with findAll():");
         log.info("-------------------------------");
